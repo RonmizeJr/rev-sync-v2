@@ -1,10 +1,10 @@
 // app/layout.tsx
 import { GeistSans } from "geist/font/sans";
-import { ThemeProvider } from "@/providers/theme-provider";
-import { TRPCProvider } from "@/providers/trpc-provider";
-import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "~/components/theme-provider";
+import { TRPCReactProvider } from "~/trpc/react";
+import { Toaster } from "~/components/ui/toaster";
 import { ClerkProvider } from "@clerk/nextjs";
-import "@/styles/globals.css";
+import "~/styles/globals.css";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -35,13 +35,12 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <TRPCProvider>
+            <TRPCReactProvider>
               {children}
               <Toaster />
-            </TRPCProvider>
+            </TRPCReactProvider>
           </ThemeProvider>
         </ClerkProvider>
-        <Analytics />
       </body>
     </html>
   );
