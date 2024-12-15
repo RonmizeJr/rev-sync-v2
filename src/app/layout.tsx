@@ -11,8 +11,8 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   title: {
-    default: "ReviewFlow - Automated Code Review Management",
-    template: "%s | ReviewFlow",
+    default: "RevSync - Automated Code Review Management",
+    template: "%s | RevSync",
   },
   description:
     "Streamline your code review process with intelligent review assignment and management.",

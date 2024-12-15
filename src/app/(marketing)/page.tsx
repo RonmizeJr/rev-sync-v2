@@ -13,12 +13,12 @@ export default function LandingPage() {
       <section className="bg-gradient-to-b from-slate-50 to-white px-4 py-20 dark:from-slate-950 dark:to-slate-900 md:py-32">
         <div className="container mx-auto max-w-6xl text-center">
           <div className="mx-auto max-w-3xl space-y-6">
-            <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
+            <h1 className="dark:text-gradient-to-r text-4xl font-bold tracking-tight dark:text-white md:text-6xl">
               Code Reviews,{" "}
               <span className="text-primary">Automatically Organized</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              ReviewFlow intelligently assigns and schedules code reviews,
+              RevSync intelligently assigns and schedules code reviews,
               eliminating bottlenecks and ensuring timely feedback for your
               team.
             </p>
@@ -37,9 +37,9 @@ export default function LandingPage() {
           </div>
 
           {/* Quick Stats */}
-          <div className="mx-auto mt-20 grid max-w-4xl gap-8 md:grid-cols-3">
+          <div className="mx-auto mt-20 grid max-w-4xl gap-8 dark:text-white md:grid-cols-3">
             <div className="space-y-2">
-              <h3 className="text-3xl font-bold">50%</h3>
+              <h2 className="text-3xl font-bold">50%</h2>
               <p className="text-muted-foreground">Faster Review Time</p>
             </div>
             <div className="space-y-2">

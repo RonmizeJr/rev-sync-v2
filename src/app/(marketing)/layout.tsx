@@ -33,17 +33,6 @@ export default function MarketingLayout({
           </Link>
 
           <MainNav />
-
-          <div className="flex items-center space-x-4">
-            <Link href="/login">
-              <Button variant="ghost" size="sm">
-                Sign In
-              </Button>
-            </Link>
-            <Link href="/signup">
-              <Button size="sm">Get Started</Button>
-            </Link>
-          </div>
         </div>
       </header>
 
