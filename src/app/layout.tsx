@@ -1,8 +1,7 @@
 // app/layout.tsx
 import { GeistSans } from "geist/font/sans";
-import { ThemeProvider } from "~/components/theme-provider";
+import { ThemeProvider } from "~/providers/theme-provider";
 import { TRPCReactProvider } from "~/trpc/react";
-import { Toaster } from "~/components/ui/toaster";
 import { ClerkProvider } from "@clerk/nextjs";
 import "~/styles/globals.css";
 
@@ -35,10 +34,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <TRPCReactProvider>
-              {children}
-              <Toaster />
-            </TRPCReactProvider>
+            <TRPCReactProvider>{children}</TRPCReactProvider>
           </ThemeProvider>
         </ClerkProvider>
       </body>
