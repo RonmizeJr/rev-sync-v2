@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "~/lib/utils";
 import { Button } from "../ui/button";
 import { SignedIn, UserButton, SignedOut } from "@clerk/nextjs";
-import { ModeToggle } from "../mode-toggle";
+import { ModeToggle } from "../ui/mode-toggle";
 
 const routes = [
   {
